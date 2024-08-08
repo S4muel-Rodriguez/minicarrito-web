@@ -1,0 +1,212 @@
+
+.barra_navegacion {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Fondo oscuro para la barra de navegación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la barra de navegación */
+    padding: 10px 0;
+}
+
+.barra_navegacion ul {
+    list-style: none; /* Eliminar puntos de la lista */
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+.barra_navegacion li {
+    position: relative; /* Necesario para la animación */
+}
+
+.barra_navegacion a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: #fff; /* Color del texto blanco */
+    font-size: 1.2em; /* Aumentar el tamaño del texto */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.barra_navegacion a:hover {
+    color: #ff4c4c; /* Color rojo en el hover */
+}
+
+.barra_navegacion li::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ff4c4c; /* Línea roja para la animación */
+    transition: width 0.3s, left 0.3s; /* Transición suave */
+}
+
+.barra_navegacion li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #ff4c4c;
+    background-color: #333;
+}
+body{
+    background-color: rgba(11, 88, 11, 0.356);
+    
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centrar los elementos */
+}
+
+article div {
+    flex: 1 1 calc(33.33% - 40px); /* Tres columnas con espacio entre ellas */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    align-items: center; /* Centrar la imagen verticalmente */
+    padding: 10px;
+}
+
+article img {
+    width: 300px; /* Ancho fijo para todas las imágenes */
+    height: 300px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Asegurar que la imagen cubra el área sin distorsionarse */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+article img:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.link-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.link-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer-rights {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

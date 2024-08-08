@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/pag_inicial.css">
+    <link rel="icon" href="./img/logo pagina inicial.ico">
+    <title>Tienda</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Tiend4 Nub3</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/galeria.html">Galeria
+                    </a>
+                  </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </nav>
+    <h1>Tienda</h1>
+</header>
+<section>
+        <h2>¡¡encontra los mejores productos de nike!!</h2>
+        <article>
+            <div class="img_zapatillas_nike">
+                <div class="zapatilla">
+                    <img src="./img/zapatilla nike.jpeg" alt="Zapatilla deportiva Nike cómodas">
+                    <p>Zapatilla deportiva Nike cómodas</p>
+                    <ul>
+                        <li>Comprar a $50</li>
+                        <input type="button" value="comprar">
+                    </ul>
+                </div>
+                <div class="zapatilla">
+                    <img src="./img/2da zapa de nike.jpg" alt="Zapatilla Nike para mejorar la rapidez">
+                    <p>Zapatilla Nike para mejorar la rapidez</p>
+                    <ul>
+                        <li>Comprar a $45</li>
+                        <input type="button" value="comprar">
+                    </ul>
+                </div>
+            </div>
+        </article>
+</section>
+<section>
+<article>
+    <br>
+    <div class="img_gorras">
+        <div class="gorra">
+            <img src="./img/gorra nike.jpeg" alt="Gorra Nike super cómoda para la cabellera">
+            <p>Gorra Nike super cómoda para la cabellera</p>
+            <ul>
+                <li>
+                    <p>Costo $12</p>
+                    <input type="button" value="Comprar">
+                </li>
+            </ul>
+        </div>
+        <div class="gorra">
+            <img src="./img/mas gorras nike.png" alt="Pack de 3 gorras Nike">
+            <p>Pack de 3 gorras Nike</p>
+            <ul>
+                <li>Costo $10</li>
+                <input type="button" value="Comprar">
+            </ul>
+        </div>
+    </div>
+</article>
+</section>
+<main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/musculosa para mujer.webp" class="d-block w-100" alt="musculosa para mujer">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/media nike.webp" class="d-block w-100" alt="media nike">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/pantalon de modda mujer.webp" class="d-block w-100" alt="pantalon de moda para mujer">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/remera manga larga.webp" class="d-block w-100" alt="remera manga larga">
+          </div>
+        </div>
+      </div>
+</main>
+<aside>
+    <div class="card">
+        <img src="./img/musculosa para mujer.webp" class="card-img-top" alt="musculosa para mujer">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Musculosa que queda bien a las mujeres</p>
+            <input type="button" value="comprar">
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/pantalon de modda mujer.webp" class="card-img-top" alt="pantalon de moda mujer">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Ponte a la moda con este pantalón para mujeres</p>
+            <input type="button" value="comprar">
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/remera manga larga.webp" class="card-img-top" alt="remera manga larga">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Remera manga larga para el invierno</p>
+            <input type="button" value="comprar">
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/media nike.webp" class="card-img-top" alt="medias largas nike">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Pack de x3 medias largas para el invierno</p>
+            <input type="button" value="comprar">
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header" onclick="toggleChat()">Chat</div>
+        <div class="chat-content">
+            <ul class="chat-messages" id="chatMessages"></ul>
+            <input type="text" id="chatInput" class="chat-input" onkeydown="if(event.key === 'Enter') sendMessage()" placeholder="Escribe tu mensaje...">
+        </div>
+    </div>
+
+</aside>
+<footer>
+    <div class="footer-container">
+        <h3 class="footer-title">Contacto</h3>
+        <div class="social-links">
+            <div class="link-item">
+                <img src="./img/img-ig.ico" alt="Instagram" class="link-icon">
+                <a href="https://www.instagram.com/s4muel_r0driguez/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <p>Conéctate con nosotros en Instagram</p>
+            </div>
+            <div class="link-item">
+                <img src="./img/img-whatsapp.ico" alt="Whatsapp" class="link-icon">
+                <a href="https://wa.link/oqcnmz" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+                <p>Chatea con nosotros en Whatsapp</p>
+            </div>
+            <div class="link-item">
+                <img src="./img/img-niko.ico" alt="Nike" class="link-icon">
+                <a href="https://www.nike.com.ar/" target="_blank" rel="noopener noreferrer">Nike Arg - Información oficial</a>
+                <p>Visita la página oficial de Nike Argentina</p>
+            </div>
+            <div class="link-item">
+                <img src="./img/img-github.ico" alt="GitHub" class="link-icon">
+                <a href="https://github.com/S4muel-Rodriguez" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <p>Explora mi perfil en GitHub</p>
+            </div>
+            <div class="link-item">
+                <img src="./img/img-linkedin.ico" alt="LinkedIn" class="link-icon">
+                <a href="https://www.linkedin.com/in/samu-rodr%C3%ADguez-77b24325a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <p>Conéctate conmigo en LinkedIn</p>
+            </div>
+        </div>
+        <p class="footer-rights">Derechos de Copyright®</p>
+    </div>
+</footer>
+    <script src="./js/bot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>
